@@ -151,7 +151,7 @@ def process_video(video_path, model, conf_threshold, iou_threshold, progress_bar
 def main():
     # Title and description
     st.title("🚗 Vehicle Detection System")
-    st.markdown("### Real-time vehicle detection using YOLOv8")
+    st.markdown("### Real-time vehicle detection using YOLOv10")
     st.markdown("---")
     
     # Sidebar
@@ -161,8 +161,8 @@ def main():
         # Model selection
         model_path = st.text_input(
             "Model Path",
-            value="yolov8s.pt",
-            help="Path to your trained YOLOv8 model"
+            value="yolov10.pt",
+            help="Path to your trained YOLO model"
         )
         
         # Detection parameters
